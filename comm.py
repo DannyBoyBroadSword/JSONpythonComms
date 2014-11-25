@@ -38,7 +38,7 @@ def update():
     #bob = initiate()
     #this will create new data instance but you can update if you want you will have to define urls in public vars so that your program doesn't make new instances update is called
     r = requests.put(bob,data=json.dumps(payload),headers = headers)
-    we ask requests to make a new object r with the mehtod put and pass in the url the data and the headers
+    #we ask requests to make a new object r with the mehtod put and pass in the url the data and the headers
     decoded = json.dumps(r.json())
     #this returns the data that was updated
     print(decoded)
